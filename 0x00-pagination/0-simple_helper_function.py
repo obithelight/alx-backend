@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ''' A Python3 Module '''
 
-from typing import tuple
+from typing import Tuple
 
 
 def index_range(page: int, page_size: int) -> tuple[int, int]:
