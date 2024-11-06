@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-''' A Python3 Module '''
+''' This module sets up a basic flask app '''
 
 from flask import Flask, render_template
 app = Flask(__name__)
@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    ''' defines and renders the index page '''
+    ''' This function renders the index page '''
     return render_template('0-index.html')
 
 
