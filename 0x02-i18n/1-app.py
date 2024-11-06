@@ -19,7 +19,7 @@ app.config.from_object(Config)
 
 @app.route('/')
 def index():
-    ''' This functin renders the index page '''
+    ''' This function renders the index page '''
     return render_template('1-index.html')
 
 
