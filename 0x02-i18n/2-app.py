@@ -29,7 +29,7 @@ def get_locale():
         Gets the locale from request and determines
         the best match with our supported languages
     '''
-    return request.accept_languages.best_match(app.Config('LANGUAGES'))
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 if __name__ == '__main__':
