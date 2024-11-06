@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-''' A Python Module '''
+''' This module defines a basic babel setup'''
 
 from flask import Flask, render_template
 from flask_babel import Babel
 
 
 class Config:
-    ''' Instantiates the languag class '''
-    LANGUAGES = ["en", "fr"]
+    ''' This class sets babel's default locale and timezone '''
+    LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
@@ -19,7 +19,7 @@ app.config.from_object(Config)
 
 @app.route('/')
 def index():
-    ''' defines the index route '''
+    ''' This functin renders the index page '''
     return render_template('1-index.html')
 
 
